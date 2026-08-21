@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTH102 Part 3: Modules 5–6 · Sunday Ojodomo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .module-box { background: #f3efe6; border-left: 8px solid #d4af37; padding: 15px 20px; margin: 25px 0; border-radius: 4px; }
+        .test-question { background: #e8f0f0; padding: 12px 18px; border-radius: 6px; margin: 15px 0; border: 1px solid #b0c4c4; }
+        .answer-box { background: #ffffff; padding: 15px 20px; border-radius: 6px; margin: 10px 0 25px 0; border: 2px dashed #1a3b3b; }
+        .math { background: #f4f1ea; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+        hr { border: none; height: 2px; background: linear-gradient(to right, #d4af37, transparent); margin: 35px 0; }
+        .nav-syllabus { background: #f3efe6; padding: 12px 20px; border-radius: 8px; border: 1px solid #d4af37; margin: 20px 0; }
+        .module-title { color: #1a3b3b; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-top: 30px; }
+        .key-point { background: #fcf8f0; border: 1px solid #d4af37; padding: 10px 15px; border-radius: 4px; margin: 10px 0; }
+        .example-box { background: #f0f5f5; border-left: 4px solid #1a3b3b; padding: 10px 15px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+        .lecture-note { background: #faf8f4; padding: 15px 20px; border-radius: 6px; margin: 15px 0; border: 1px solid #e0d8cc; }
+        .analogy { background: #f3efe6; padding: 12px 18px; border-radius: 6px; margin: 10px 0; font-style: italic; border-left: 4px solid #d4af37; }
+        .nav-links { display: flex; justify-content: space-between; margin: 20px 0; padding: 15px; background: #f3efe6; border-radius: 8px; flex-wrap: wrap; gap: 10px; }
+        .nav-links a { background: #1a3b3b; color: #fcf8f0; padding: 10px 20px; border-radius: 6px; text-decoration: none; }
+        .nav-links a:hover { background: #2a5b5b; }
+        @media (max-width: 600px) { .nav-links { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="../index.html">Sunday Ojodomo</a></h1>
+            <nav>
+                <a href="../blog.html">Blog</a>
+                <a href="../studies.html">Studies</a>
+                <a href="../qa.html">Q&A</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1 style="font-size: 2.2em; border-bottom: 4px solid #d4af37; padding-bottom: 10px;">MTH102: Elementary Mathematics II</h1>
+                <p style="text-align: center; color: #4a5c5c; font-style: italic; margin-top: -5px;">Part 3: Modules 5–6 (Advanced Differentiation &amp; Applications)</p>
+                <p style="text-align: center; color: #4a5c5c;">Compiled by Sunday Ojodomo Michael | Federal University Lokoja</p>
+
+                <div class="nav-links">
+                    <a href="mth102-part2.html">← Part 2: Modules 3–4</a>
+                    <span>📘 Part 3: Modules 5–6</span>
+                    <a href="mth102-part4.html">Part 4: Modules 7–9 →</a>
+                </div>
+
+                <hr>
+
+                <div class="nav-syllabus">
+                    <h3>📚 Part 3 Syllabus</h3>
+                    <ul>
+                        <li><strong>Module 5:</strong> Advanced Differentiation — Product Rule, Quotient Rule, Chain Rule, Derivatives of Trig/Log/Exp Functions, Implicit Differentiation, Higher-Order Derivatives</li>
+                        <li><strong>Module 6:</strong> Applications of Derivatives — Increasing/Decreasing Intervals, Critical Points, Max/Min Values, Optimization Problems</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 5 -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 5: Advanced Differentiation</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Beyond the Basics</h3>
+                    <p>While the power rule handles simple polynomials, real-world functions are often <strong>combinations</strong> of functions — products, quotients, and compositions. We need special rules for these cases.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>5.1 The Product Rule</h3>
+                    <p>(uv)' = u'v + uv'</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Differentiate y = x² sin(x).<br>
+                        u = x², u' = 2x; v = sin x, v' = cos x.<br>
+                        y' = 2x sin x + x² cos x.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>5.2 The Quotient Rule</h3>
+                    <p>(u/v)' = (u'v - uv')/v²</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Differentiate y = ln(x)/x².<br>
+                        u = ln x, u' = 1/x; v = x², v' = 2x.<br>
+                        y' = ((1/x)x² - (ln x)2x)/x⁴ = (x - 2x ln x)/x⁴ = (1 - 2ln x)/x³.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>5.3 The Chain Rule</h3>
+                    <p>dy/dx = dy/du · du/dx</p>
+                    <div class="analogy">
+                        <strong>Analogy:</strong> If you are a function, and your friend is a function, and I apply your friend first and then you, the effect is multiplied. The Chain Rule says: multiply the rates of change.
+                    </div>
+                    <div class="example-box">
+                        <strong>Example:</strong> Differentiate y = (3x² + 1)⁵.<br>
+                        Let u = 3x² + 1. dy/du = 5u⁴, du/dx = 6x.<br>
+                        dy/dx = 5(3x² + 1)⁴ · 6x = 30x(3x² + 1)⁴.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>5.4 Derivatives of Special Functions</h3>
+                    <ul>
+                        <li>d/dx sin x = cos x</li>
+                        <li>d/dx cos x = -sin x</li>
+                        <li>d/dx tan x = sec² x</li>
+                        <li>d/dx eˣ = eˣ</li>
+                        <li>d/dx ln x = 1/x</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>5.5 Implicit Differentiation</h3>
+                    <p>Sometimes y is not written explicitly as a function of x. We differentiate both sides with respect to x, treating y as a function of x, and then solve for dy/dx.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Find dy/dx for x² + y² = 25.<br>
+                        Differentiate: 2x + 2y(dy/dx) = 0 → dy/dx = -x/y.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>5.6 Higher-Order Derivatives</h3>
+                    <p>We can differentiate a function multiple times to find higher-order derivatives. The second derivative, f''(x), tells us about <strong>concavity</strong> — whether the graph is curving upward or downward.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> If f(x) = x³ - 3x², then:<br>
+                        f'(x) = 3x² - 6x<br>
+                        f''(x) = 6x - 6<br>
+                        f'''(x) = 6
+                    </div>
+                </div>
+
+                <h3>📝 Module 5 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Differentiate y = (3x² + 1)⁵ (Chain Rule).
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Differentiate y = x² sin(x) (Product Rule).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Differentiate y = ln(x)/x² (Quotient Rule).
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Find dy/dx for x² + y² = 25 (Implicit Differentiation).
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> Find f''(x) for f(x) = x³ - 3x².
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> 30x(3x²+1)⁴.</p>
+                    <p><strong>A2:</strong> 2x sin x + x² cos x.</p>
+                    <p><strong>A3:</strong> (1 - 2ln x)/x³.</p>
+                    <p><strong>A4:</strong> -x/y.</p>
+                    <p><strong>A5:</strong> f'(x) = 3x² - 6x, f''(x) = 6x - 6.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 6 -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 6: Applications of Derivatives</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Why Derivatives Matter</h3>
+                    <p>Derivatives are not just abstract math — they tell us <strong>how things change</strong>. They help us find maximum profits, minimum costs, optimal paths, and much more.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>6.1 Increasing and Decreasing Intervals</h3>
+                    <ul>
+                        <li>If f'(x) &gt; 0, f is <strong>increasing</strong> (going up).</li>
+                        <li>If f'(x) &lt; 0, f is <strong>decreasing</strong> (going down).</li>
+                    </ul>
+                    <div class="example-box">
+                        <strong>Example:</strong> For f(x) = x³ - 3x, f'(x) = 3x² - 3 = 3(x-1)(x+1).<br>
+                        Increasing on (-∞, -1) and (1, ∞). Decreasing on (-1, 1).
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>6.2 Critical Points and Max/Min</h3>
+                    <ul>
+                        <li><strong>Critical Points:</strong> Where f'(x) = 0 or undefined. These are candidates for local maxima/minima.</li>
+                        <li><strong>First Derivative Test:</strong> If f' changes from positive to negative at a critical point, it's a local maximum. If negative to positive, it's a local minimum.</li>
+                        <li><strong>Second Derivative Test:</strong> If f''(x) &gt; 0, local minimum. If f''(x) &lt; 0, local maximum.</li>
+                    </ul>
+                    <div class="example-box">
+                        <strong>Example:</strong> f(x) = x³ - 3x² - 9x + 5.<br>
+                        f'(x) = 3(x-3)(x+1). Critical points: x = -1, 3.<br>
+                        f''(x) = 6x - 6. At x = -1, f'' = -12 &lt; 0 → local max. At x = 3, f'' = 12 &gt; 0 → local min.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>6.3 Optimization Problems</h3>
+                    <p>Optimization is finding the <strong>best</strong> value — the maximum profit, minimum cost, largest area, etc. The process:</p>
+                    <ol>
+                        <li>Set up the function to be optimized.</li>
+                        <li>Find its derivative.</li>
+                        <li>Set the derivative equal to zero and solve.</li>
+                        <li>Confirm it's a maximum or minimum (using the second derivative test).</li>
+                    </ol>
+                    <div class="example-box">
+                        <strong>Example:</strong> Find two positive numbers whose sum is 20 and whose product is maximum.<br>
+                        Let numbers be x and 20-x. Product P = x(20-x) = 20x - x².<br>
+                        P' = 20 - 2x = 0 → x = 10.<br>
+                        P'' = -2 &lt; 0 → maximum. Numbers: 10 and 10.
+                    </div>
+                </div>
+
+                <h3>📝 Module 6 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Find the critical points of f(x) = x³ - 3x² - 9x + 5 and classify them.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Find the intervals where f(x) = x³ - 3x is increasing and decreasing.
+                </div>
+                <div class="test-question">
+                    <strong>Q3 (Optimization):</strong> Find two positive numbers whose sum is 20 and product is maximum.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> f'(x) = 3(x-3)(x+1). Critical points: x = -1, 3. f''(x) = 6x - 6. At x = -1, f'' = -12 &lt; 0 → local max. At x = 3, f'' = 12 &gt; 0 → local min.</p>
+                    <p><strong>A2:</strong> Increasing on (-∞, -1) and (1, ∞). Decreasing on (-1, 1).</p>
+                    <p><strong>A3:</strong> Numbers: 10 and 10.</p>
+                </div>
+
+                <hr>
+
+                <div class="nav-links">
+                    <a href="mth102-part2.html">← Part 2: Modules 3–4</a>
+                    <span>📘 End of Part 3</span>
+                    <a href="mth102-part4.html">Continue to Part 4: Modules 7–9 →</a>
+                </div>
+
+                <h2 style="text-align:center; border-bottom: none; margin-top: 40px;">🎓 End of MTH102 Part 3</h2>
+                <p style="text-align:center; color:#4a5c5c;">Continue to Part 4 for Integration and the Fundamental Theorem of Calculus.</p>
+
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2026 Sunday Ojodomo Michael</p>
+        </footer>
+    </div>
+</body>
+  </html>
