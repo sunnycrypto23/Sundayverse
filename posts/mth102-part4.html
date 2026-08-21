@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTH102 Part 4: Modules 7–9 · Sunday Ojodomo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .module-box { background: #f3efe6; border-left: 8px solid #d4af37; padding: 15px 20px; margin: 25px 0; border-radius: 4px; }
+        .test-question { background: #e8f0f0; padding: 12px 18px; border-radius: 6px; margin: 15px 0; border: 1px solid #b0c4c4; }
+        .answer-box { background: #ffffff; padding: 15px 20px; border-radius: 6px; margin: 10px 0 25px 0; border: 2px dashed #1a3b3b; }
+        .math { background: #f4f1ea; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+        hr { border: none; height: 2px; background: linear-gradient(to right, #d4af37, transparent); margin: 35px 0; }
+        .nav-syllabus { background: #f3efe6; padding: 12px 20px; border-radius: 8px; border: 1px solid #d4af37; margin: 20px 0; }
+        .module-title { color: #1a3b3b; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-top: 30px; }
+        .key-point { background: #fcf8f0; border: 1px solid #d4af37; padding: 10px 15px; border-radius: 4px; margin: 10px 0; }
+        .example-box { background: #f0f5f5; border-left: 4px solid #1a3b3b; padding: 10px 15px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+        .lecture-note { background: #faf8f4; padding: 15px 20px; border-radius: 6px; margin: 15px 0; border: 1px solid #e0d8cc; }
+        .analogy { background: #f3efe6; padding: 12px 18px; border-radius: 6px; margin: 10px 0; font-style: italic; border-left: 4px solid #d4af37; }
+        .nav-links { display: flex; justify-content: space-between; margin: 20px 0; padding: 15px; background: #f3efe6; border-radius: 8px; flex-wrap: wrap; gap: 10px; }
+        .nav-links a { background: #1a3b3b; color: #fcf8f0; padding: 10px 20px; border-radius: 6px; text-decoration: none; }
+        .nav-links a:hover { background: #2a5b5b; }
+        @media (max-width: 600px) { .nav-links { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="../index.html">Sunday Ojodomo</a></h1>
+            <nav>
+                <a href="../blog.html">Blog</a>
+                <a href="../studies.html">Studies</a>
+                <a href="../qa.html">Q&A</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1 style="font-size: 2.2em; border-bottom: 4px solid #d4af37; padding-bottom: 10px;">MTH102: Elementary Mathematics II</h1>
+                <p style="text-align: center; color: #4a5c5c; font-style: italic; margin-top: -5px;">Part 4: Modules 7–9 (Integration &amp; FTC)</p>
+                <p style="text-align: center; color: #4a5c5c;">Compiled by Sunday Ojodomo Michael | Federal University Lokoja</p>
+
+                <div class="nav-links">
+                    <a href="mth102-part3.html">← Part 3: Modules 5–6</a>
+                    <span>📘 Part 4: Modules 7–9</span>
+                </div>
+
+                <hr>
+
+                <div class="nav-syllabus">
+                    <h3>📚 Part 4 Syllabus</h3>
+                    <ul>
+                        <li><strong>Module 7:</strong> Integration — Antiderivatives, Indefinite Integrals, Power Rule, Integration by Substitution (u-Substitution)</li>
+                        <li><strong>Module 8:</strong> Advanced Integration — Integration by Parts, Partial Fractions, Trigonometric Substitution</li>
+                        <li><strong>Module 9:</strong> The Fundamental Theorem of Calculus — Definite Integrals, Area Under Curves, Area Between Curves</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 7 -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 7: Integration as Anti-differentiation</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: The Reverse Operation</h3>
+                    <p>If differentiation is about <strong>finding rates of change</strong>, integration is about <strong>finding the original function</strong> from its rate of change. It's like: if I know your speed at every moment, can I find out how far you've traveled?</p>
+
+                    <div class="analogy">
+                        <strong>Analogy:</strong> Differentiation is like breaking a puzzle into pieces. Integration is like putting the pieces back together. They are inverse operations — like addition and subtraction, or multiplication and division.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>7.1 The Indefinite Integral</h3>
+                    <p>∫ f(x) dx = F(x) + C, where F'(x) = f(x).</p>
+                    <p>The constant C is called the <strong>constant of integration</strong> — any constant can be added to the antiderivative.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>7.2 The Power Rule for Integration</h3>
+                    <p>∫ xⁿ dx = xⁿ⁺¹/(n+1) + C, for n ≠ -1.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ x³ dx = x⁴/4 + C.
+                    </div>
+                    <p><strong>Special Case:</strong> ∫ x⁻¹ dx = ∫ 1/x dx = ln|x| + C.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>7.3 Integration by Substitution (u-Substitution)</h3>
+                    <p>This is the reverse of the Chain Rule. Let u = g(x), then du = g'(x) dx.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ 2x/(x²+1) dx.<br>
+                        Let u = x²+1, du = 2x dx. Integral becomes ∫ 1/u du = ln|u| + C = ln(x²+1) + C.
+                    </div>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ e³ˣ dx.<br>
+                        Let u = 3x, du = 3 dx → dx = du/3. Integral = ∫ eᵘ (du/3) = (1/3)eᵘ + C = (1/3)e³ˣ + C.
+                    </div>
+                </div>
+
+                <h3>📝 Module 7 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Evaluate ∫ (3x² + 4x - 1) dx.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Evaluate ∫ 2x/(x²+1) dx (u-substitution).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Evaluate ∫ e³ˣ dx.
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Evaluate ∫ 1/x dx.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> x³ + 2x² - x + C.</p>
+                    <p><strong>A2:</strong> ln(x²+1) + C.</p>
+                    <p><strong>A3:</strong> (1/3)e³ˣ + C.</p>
+                    <p><strong>A4:</strong> ln|x| + C.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 8 -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 8: Advanced Integration Techniques</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: When Basic Integration Isn't Enough</h3>
+                    <p>Not all functions are simple polynomials. Some are products of functions, ratios of polynomials, or involve radicals. We need specialized techniques for these cases.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>8.1 Integration by Parts</h3>
+                    <p>∫ u dv = uv - ∫ v du</p>
+                    <p>Choose u as the function that <strong>simplifies</strong> when differentiated (LIATE rule: Logarithmic, Inverse trigonometric, Algebraic, Trigonometric, Exponential).</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ x eˣ dx.<br>
+                        Let u = x, dv = eˣ dx → du = dx, v = eˣ.<br>
+                        ∫ x eˣ dx = x eˣ - ∫ eˣ dx = x eˣ - eˣ + C.
+                    </div>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ x cos(x) dx.<br>
+                        Let u = x, dv = cos x dx → du = dx, v = sin x.<br>
+                        ∫ x cos x dx = x sin x - ∫ sin x dx = x sin x + cos x + C.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>8.2 Partial Fractions</h3>
+                    <p>Decompose rational functions into simpler fractions for integration.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ 1/(x²-1) dx.<br>
+                        Decompose: 1/[(x-1)(x+1)] = 1/2/(x-1) - 1/2/(x+1).<br>
+                        Integral = (1/2) ln|x-1| - (1/2) ln|x+1| + C = (1/2) ln|(x-1)/(x+1)| + C.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>8.3 Trigonometric Substitution</h3>
+                    <p>Use trigonometric identities to handle radicals like √(a² - x²).</p>
+                    <p><strong>Tip:</strong> For √(a² - x²), let x = a sin θ.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫ √(1-x²) dx.<br>
+                        Let x = sin θ, dx = cos θ dθ. √(1-x²) = cos θ.<br>
+                        Integral becomes ∫ cos² θ dθ = ∫ (1+cos 2θ)/2 dθ = θ/2 + sin 2θ/4 + C = arcsin(x)/2 + x√(1-x²)/2 + C.
+                    </div>
+                </div>
+
+                <h3>📝 Module 8 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Evaluate ∫ x eˣ dx (Integration by Parts).
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Evaluate ∫ 1/(x² - 1) dx (Partial Fractions).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Evaluate ∫ x cos(x) dx (Integration by Parts).
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> x eˣ - eˣ + C.</p>
+                    <p><strong>A2:</strong> (1/2) ln|(x-1)/(x+1)| + C.</p>
+                    <p><strong>A3:</strong> x sin x + cos x + C.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 9 -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 9: The Fundamental Theorem of Calculus</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: The Grand Unification</h3>
+                    <p>Differentiation and integration are <strong>inverse operations</strong>. The Fundamental Theorem of Calculus (FTC) makes this relationship formal. It tells us that the <strong>net change</strong> of a function is equal to the integral of its rate of change.</p>
+
+                    <div class="analogy">
+                        <strong>Analogy:</strong> If you know your speed at every moment, you can find out how far you've traveled. That's what the FTC does — it connects rates of change (derivatives) to total change (integrals).
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.1 FTC Part 1</h3>
+                    <p>d/dx ∫ₐˣ f(t) dt = f(x)</p>
+                    <p><strong>Meaning:</strong> The derivative of an integral (with respect to the upper limit) is the original function.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> If F(x) = ∫₀ˣ √(t²+1) dt, find F'(2).<br>
+                        F'(x) = √(x²+1). F'(2) = √(4+1) = √5.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.2 FTC Part 2</h3>
+                    <p>∫ₐᵇ f(x) dx = F(b) - F(a), where F is the antiderivative of f.</p>
+                    <p><strong>Meaning:</strong> To evaluate a definite integral, find the antiderivative and subtract the values at the endpoints.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> ∫₀² (x³ - x) dx.<br>
+                        Antiderivative: x⁴/4 - x²/2.<br>
+                        At 2: (16/4 - 4/2) = (4 - 2) = 2. At 0: 0.<br>
+                        Result: 2.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.3 Area Under a Curve</h3>
+                    <p>∫ₐᵇ f(x) dx gives the <strong>signed area</strong> between the curve and the x-axis from x=a to x=b. If f(x) ≥ 0 on [a, b], it's the actual area.</p>
+
+                    <div class="example-box">
+                        <strong>Example:</strong> Area under f(x) = x² from x=1 to x=3.<br>
+                        ∫₁³ x² dx = [x³/3]₁³ = 27/3 - 1/3 = 26/3.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.4 Area Between Curves</h3>
+                    <p>Area between y = f(x) (top) and y = g(x) (bottom) from x=a to x=b:</p>
+                    <p>Area = ∫ₐᵇ [f(x) - g(x)] dx</p>
+
+                    <div class="example-box">
+                        <strong>Example:</strong> Area between y = x and y = x².<br>
+                        Intersection points: x = 0, 1. Top is x, bottom is x².<br>
+                        Area = ∫₀¹ (x - x²) dx = [x²/2 - x³/3]₀¹ = 1/2 - 1/3 = 1/6.
+                    </div>
+                </div>
+
+                <h3>📝 Module 9 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Evaluate ∫₀² (x³ - x) dx.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Find the area under f(x) = x² from x=1 to x=3.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Find the area between the curves y = x and y = x².
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> If F(x) = ∫₀ˣ √(t²+1) dt, find F'(2).
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> ∫₀² (x³ - x) dx = [x⁴/4 - x²/2]₀² = (16/4 - 4/2) - 0 = (4 - 2) = 2.</p>
+                    <p><strong>A2:</strong> ∫₁³ x² dx = [x³/3]₁³ = 27/3 - 1/3 = 26/3.</p>
+                    <p><strong>A3:</strong> ∫₀¹ (x - x²) dx = [x²/2 - x³/3]₀¹ = 1/2 - 1/3 = 1/6.</p>
+                    <p><strong>A4:</strong> By FTC Part 1, F'(x) = √(x²+1). F'(2) = √(4+1) = √5.</p>
+                </div>
+
+                <hr>
+
+                <div class="nav-links">
+                    <a href="mth102-part3.html">← Part 3: Modules 5–6</a>
+                    <span>🎓 End of MTH102</span>
+                </div>
+
+                <h2 style="text-align:center; border-bottom: none; margin-top: 40px;">🎓 End of MTH102 Full Lecture Series</h2>
+                <p style="text-align:center; color:#4a5c5c;">Prepared with depth, context, and clarity. Good luck with your studies, Sunday!</p>
+
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2026 Sunday Ojodomo Michael</p>
+        </footer>
+    </div>
+</body>
+                      </html>
