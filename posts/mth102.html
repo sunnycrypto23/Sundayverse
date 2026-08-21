@@ -5,6 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTH102 Complete Notes · Sunday Ojodomo</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Additional styles for the notes page */
+        .module-box {
+            background: #f3efe6;
+            border-left: 8px solid #d4af37;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .test-question {
+            background: #e8f0f0;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border: 1px solid #b0c4c4;
+        }
+        .answer-box {
+            background: #ffffff;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 10px 0 25px 0;
+            border: 2px dashed #1a3b3b;
+        }
+        .answer-box strong {
+            color: #1a3b3b;
+        }
+        .math {
+            background: #f4f1ea;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #d4af37, transparent);
+            margin: 35px 0;
+        }
+        .nav-syllabus {
+            background: #f3efe6;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #d4af37;
+            margin: 20px 0;
+        }
+        .download-box {
+            background: #e8f0f0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #1a3b3b;
+            margin: 20px 0;
+        }
+        .download-box a {
+            background: #1a3b3b;
+            color: #fcf8f0;
+            padding: 10px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .download-box a:hover {
+            background: #2a5b5b;
+        }
+        .module-title {
+            color: #1a3b3b;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -18,18 +89,315 @@
                 <a href="../contact.html">Contact</a>
             </nav>
         </header>
+
         <main>
             <article>
-                <h2>MTH102: Complete Calculus Notes (All 9 Modules)</h2>
-                <p><em>Published: August 2026</em></p>
-                <p>Full tutor notes covering Functions, Limits, Continuity, Differentiation (all rules), Applications of Derivatives, Integration (all techniques), and the Fundamental Theorem of Calculus. Includes self-assessment tests with detailed solutions for every module.</p>
-                <p>📄 <a href="../assets/mth102_complete_notes.pdf" target="_blank">Download the full PDF notes here</a></p>
-                <p>🧠 <a href="../qa.html">Visit the Q&A page</a> for more practice.</p>
-            </article>
-        </main>
-        <footer>
-            <p>© 2026 Sunday Ojodomo Michael</p>
-        </footer>
-    </div>
-</body>
-</html>
+                <h1 style="font-size: 2em; border-bottom: 4px solid #d4af37; padding-bottom: 10px;">MTH102: Elementary Mathematics II</h1>
+                <p style="text-align: center; color: #4a5c5c; font-style: italic; margin-top: -5px;">Complete Lecture Notes &amp; Q&A — All 9 Modules</p>
+                <p style="text-align: center; color: #4a5c5c;">Compiled by Sunday Ojodomo Michael | Federal University Lokoja</p>
+
+                <hr>
+
+                <div class="nav-syllabus">
+                    <h3>📚 Course Syllabus (Modules 1–9)</h3>
+                    <ul>
+                        <li><strong>Module 1:</strong> Functions of Real Variables (Domain, Range, Even/Odd, Periodic, Composition, Difference Quotient)</li>
+                        <li><strong>Module 2:</strong> Limits &amp; Limit Theorems (Intuition, Theorems, Squeeze Theorem, Infinite Limits, Indeterminate Forms)</li>
+                        <li><strong>Module 3:</strong> Continuity (Definition, Types of Discontinuities, IVT, Inverse Functions)</li>
+                        <li><strong>Module 4:</strong> Differentiation from First Principles (Definition, Power/Sum Rules, Derivative of sin x)</li>
+                        <li><strong>Module 5:</strong> Advanced Differentiation (Product, Quotient, Chain Rule, Trig/Log/Exp, Implicit, Higher-order)</li>
+                        <li><strong>Module 6:</strong> Applications of Derivatives (Increasing/Decreasing, Max/Min, Optimization)</li>
+                        <li><strong>Module 7:</strong> Integration as Anti-differentiation (Indefinite Integrals, Power Rule, u-Substitution)</li>
+                        <li><strong>Module 8:</strong> Advanced Integration Techniques (Parts, Partial Fractions, Trig Substitution)</li>
+                        <li><strong>Module 9:</strong> The Fundamental Theorem of Calculus (Definite Integrals, Area under &amp; between curves)</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- MODULE 1 -->
+                <h2 class="module-title">📘 Module 1: Functions of Real Variables</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <p><strong>Definition:</strong> A function f from set X (Domain) to set Y (Codomain) assigns <strong>exactly one</strong> f(x) ∈ Y to every x ∈ X.</p>
+                    <ul>
+                        <li><strong>Domain:</strong> All valid inputs.</li>
+                        <li><strong>Range:</strong> Actual outputs. (Range ⊆ Codomain).</li>
+                        <li><strong>Even:</strong> f(-x) = f(x) (Symmetry over Y-axis).</li>
+                        <li><strong>Odd:</strong> f(-x) = -f(x) (Rotational symmetry).</li>
+                        <li><strong>Periodic:</strong> f(x+T) = f(x). Fundamental period T.</li>
+                        <li><strong>Composite:</strong> (f ∘ g)(x) = f(g(x)). Domain: x ∈ D_g and g(x) ∈ D_f.</li>
+                        <li><strong>Difference Quotient:</strong> (f(x+h)-f(x))/h (Slope of secant line).</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1 (Domain &amp; Range):</strong> Find the domain and range of f(x) = 3x / (x² - 4).
+                </div>
+                <div class="test-question">
+                    <strong>Q2 (Even/Odd):</strong> Determine if f(x) = x³ sin(x) is even, odd, or neither.
+                </div>
+                <div class="test-question">
+                    <strong>Q3 (Composite):</strong> Given f(x) = 1/x and g(x) = √(x-2), find (f ∘ g)(x) and its domain.
+                </div>
+                <div class="test-question">
+                    <strong>Q4 (Periodicity):</strong> What is the fundamental period of f(x) = cos(4x)?
+                </div>
+                <div class="test-question">
+                    <strong>Q5 (Difference Quotient):</strong> Compute (f(x+h)-f(x))/h for f(x) = 2x² - 3x. Simplify.
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> Domain: x ≠ ±2. Range: ℝ.<br>
+                    <strong>A2:</strong> f(-x) = (-x)³ sin(-x) = (-x³)(-sin x) = x³ sin x = f(x) → <strong>Even</strong>.<br>
+                    <strong>A3:</strong> (f ∘ g)(x) = 1/√(x-2). Domain: x &gt; 2.<br>
+                    <strong>A4:</strong> T = 2π/4 = π/2.<br>
+                    <strong>A5:</strong> f(x+h) = 2x²+4xh+2h²-3x-3h. Subtract f(x): 4xh+2h²-3h. Divide by h: <strong>4x + 2h - 3</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 2 -->
+                <h2 class="module-title">📘 Module 2: Limits &amp; Limit Theorems</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <p><strong>Intuition:</strong> A limit lim(x→a) f(x) = L means as x gets arbitrarily close to a (from both sides), f(x) gets arbitrarily close to L.</p>
+                    <ul>
+                        <li><strong>Limit Theorems:</strong> Constant, Sum, Product, Quotient, Power, Root.</li>
+                        <li><strong>Squeeze Theorem:</strong> If g(x) ≤ f(x) ≤ h(x) and lim g = lim h = L, then lim f = L.</li>
+                        <li><strong>Infinite Limits:</strong> lim(x→a) 1/(x-a)² = +∞.</li>
+                        <li><strong>Indeterminate Forms:</strong> 0/0, ∞/∞. Solve via factorization or rationalization.</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Evaluate lim(x→3) (x² - 9)/(x - 3).
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Evaluate lim(x→∞) (3x² + 2x)/(5x² - 4).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Use Squeeze Theorem: If 1 - x²/2 ≤ f(x) ≤ 1 + x²/2, find lim(x→0) f(x).
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Evaluate lim(x→0) sin(2x)/x.
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> Factor: (x-3)(x+3)/(x-3) = x+3 → <strong>6</strong>.<br>
+                    <strong>A2:</strong> Divide by x²: (3 + 2/x)/(5 - 4/x²) → <strong>3/5</strong>.<br>
+                    <strong>A3:</strong> Both bounds approach 1, so <strong>1</strong>.<br>
+                    <strong>A4:</strong> Let u = 2x: (sin(2x)/2x)·2 → <strong>2</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 3 -->
+                <h2 class="module-title">📘 Module 3: Continuity</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <p>A function is continuous at x = a if <strong>three conditions</strong> are met:</p>
+                    <ol>
+                        <li>f(a) is defined.</li>
+                        <li>lim(x→a) f(x) exists.</li>
+                        <li>lim(x→a) f(x) = f(a).</li>
+                    </ol>
+                    <ul>
+                        <li><strong>Types of Discontinuities:</strong> Removable (hole), Jump (step), Infinite (vertical asymptote).</li>
+                        <li><strong>Intermediate Value Theorem (IVT):</strong> If f is continuous on [a,b] and k is between f(a) and f(b), then there exists c ∈ (a,b) such that f(c) = k.</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Is f(x) = (x²-4)/(x-2) continuous at x=2? If not, how can it be redefined?
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Find k that makes f(x) = {x² + k, x ≤ 1; 2x + 3, x &gt; 1} continuous at x=1.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Show that f(x) = x³ - x - 1 has a root between 1 and 2 using IVT.
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> No. f(2) undefined. Factor: (x-2)(x+2)/(x-2) = x+2. Redefine f(2) = 4.<br>
+                    <strong>A2:</strong> Left limit: 1+k. Right limit: 5. Set 1+k=5 → <strong>k=4</strong>.<br>
+                    <strong>A3:</strong> f(1) = -1 (negative), f(2) = 5 (positive). By IVT, root exists between 1 and 2.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 4 -->
+                <h2 class="module-title">📘 Module 4: Differentiation from First Principles</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <p><strong>Definition of Derivative:</strong> f'(x) = lim(h→0) (f(x+h)-f(x))/h.</p>
+                    <ul>
+                        <li>Constant rule: d/dx(c) = 0.</li>
+                        <li>Power rule: d/dx(xⁿ) = nxⁿ⁻¹.</li>
+                        <li>Sum rule: d/dx(f+g) = f' + g'.</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Using first principles, find the derivative of f(x) = x².
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Using first principles, find the derivative of f(x) = √x.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Differentiate f(x) = 5x⁴ - 3x² + 7 using the power rule.
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> f'(x) = lim(h→0) ((x+h)² - x²)/h = lim(h→0) (2xh + h²)/h = <strong>2x</strong>.<br>
+                    <strong>A2:</strong> f'(x) = lim(h→0) (√(x+h) - √x)/h = 1/(2√x).<br>
+                    <strong>A3:</strong> f'(x) = <strong>20x³ - 6x</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 5 -->
+                <h2 class="module-title">📘 Module 5: Advanced Differentiation</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <ul>
+                        <li><strong>Product Rule:</strong> (uv)' = u'v + uv'.</li>
+                        <li><strong>Quotient Rule:</strong> (u/v)' = (u'v - uv')/v².</li>
+                        <li><strong>Chain Rule:</strong> dy/dx = (dy/du)·(du/dx).</li>
+                        <li><strong>Derivatives:</strong> d/dx sin x = cos x, d/dx cos x = -sin x, d/dx eˣ = eˣ, d/dx ln x = 1/x.</li>
+                        <li><strong>Implicit Differentiation:</strong> Differentiate both sides with respect to x and solve for dy/dx.</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Differentiate y = (3x² + 1)⁵ (Chain Rule).
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Differentiate y = x² sin(x) (Product Rule).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Differentiate y = ln(x)/x² (Quotient Rule).
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Find dy/dx for x² + y² = 25 (Implicit Differentiation).
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> <strong>30x(3x²+1)⁴</strong>.<br>
+                    <strong>A2:</strong> <strong>2x sin x + x² cos x</strong>.<br>
+                    <strong>A3:</strong> <strong>(1 - 2ln x)/x³</strong>.<br>
+                    <strong>A4:</strong> <strong>-x/y</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 6 -->
+                <h2 class="module-title">📘 Module 6: Applications of Derivatives</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <ul>
+                        <li><strong>Increasing/Decreasing:</strong> f'(x) > 0 → increasing; f'(x) < 0 → decreasing.</li>
+                        <li><strong>Critical Points:</strong> Where f'(x) = 0 or undefined.</li>
+                        <li><strong>First Derivative Test:</strong> Sign change of f' determines local max/min.</li>
+                        <li><strong>Second Derivative Test:</strong> f''(x) > 0 → local min; f''(x) < 0 → local max.</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Find critical points of f(x) = x³ - 3x² - 9x + 5 and classify them.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Find intervals where f(x) = x³ - 3x is increasing/decreasing.
+                </div>
+                <div class="test-question">
+                    <strong>Q3 (Optimization):</strong> Find two positive numbers whose sum is 20 and product is maximum.
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> f'(x) = 3(x-3)(x+1). Critical points: x = -1 (local max), x = 3 (local min).<br>
+                    <strong>A2:</strong> Increasing on (-∞, -1) and (1, ∞); Decreasing on (-1, 1).<br>
+                    <strong>A3:</strong> Numbers: <strong>10 and 10</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 7 -->
+                <h2 class="module-title">📘 Module 7: Integration as Anti-differentiation</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <p><strong>Indefinite Integral:</strong> ∫ f(x) dx = F(x) + C, where F'(x) = f(x).</p>
+                    <ul>
+                        <li><strong>Power Rule:</strong> ∫ xⁿ dx = xⁿ⁺¹/(n+1) + C.</li>
+                        <li><strong>Special Cases:</strong> ∫ 1/x dx = ln|x| + C, ∫ eˣ dx = eˣ + C.</li>
+                        <li><strong>u-Substitution:</strong> Reverse of Chain Rule.</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Evaluate ∫ (3x² + 4x - 1) dx.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Evaluate ∫ 2x/(x²+1) dx (u-substitution).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Evaluate ∫ e³ˣ dx.
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> <strong>x³ + 2x² - x + C</strong>.<br>
+                    <strong>A2:</strong> <strong>ln(x²+1) + C</strong>.<br>
+                    <strong>A3:</strong> <strong>(1/3)e³ˣ + C</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 8 -->
+                <h2 class="module-title">📘 Module 8: Advanced Integration Techniques</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <ul>
+                        <li><strong>Integration by Parts:</strong> ∫ u dv = uv - ∫ v du.</li>
+                        <li><strong>Partial Fractions:</strong> Decompose rational functions into simpler fractions.</li>
+                        <li><strong>Trigonometric Substitution:</strong> Handle radicals like √(a² - x²).</li>
+                    </ul>
+                </div>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Evaluate ∫ x eˣ dx (Integration by Parts).
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Evaluate ∫ 1/(x² - 1) dx (Partial Fractions).
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Evaluate ∫ x cos(x) dx (Integration by Parts).
+                </div>
+
+                <div class="answer-box">
+                    <strong>Solutions:</strong><br>
+                    <strong>A1:</strong> <strong>x eˣ - eˣ + C</strong>.<br>
+                    <strong>A2:</strong> <strong>(1/2) ln|(x-1)/(x+1)| + C</strong>.<br>
+                    <strong>A3:</strong> <strong>x sin x + cos x + C</strong>.
+                </div>
+
+                <hr>
+
+                <!-- MODULE 9 -->
+                <h2 class="module-title">📘 Module 9: The Fundamental Theorem of Calculus &amp; Area</h2>
+                <div class="module-box">
+                    <h4>Core Concepts</h4>
+                    <ul>
+                        <li><strong>FTC Part 1:</strong> d/dx ∫ₐˣ f(t) dt = f(x).</li>
+                        <li><strong>FTC Part 2:</strong> ∫ₐᵇ f(x) dx = F(b) - F(a).</li>
+                        <li><strong>Area under curve:</strong> ∫ₐᵇ f(x) dx.</li>
+                        <li><strong>Area between curves:</strong> ∫ₐᵇ (Top - Bottom) dx.</li>
+                    </ul>
+                </div>
+
+   
