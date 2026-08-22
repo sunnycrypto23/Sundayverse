@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO102 Part 6: Systems &amp; Processes · Sunday Ojodomo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .module-box { background: #f3efe6; border-left: 8px solid #d4af37; padding: 15px 20px; margin: 25px 0; border-radius: 4px; }
+        .test-question { background: #e8f0f0; padding: 12px 18px; border-radius: 6px; margin: 15px 0; border: 1px solid #b0c4c4; }
+        .answer-box { background: #ffffff; padding: 15px 20px; border-radius: 6px; margin: 10px 0 25px 0; border: 2px dashed #1a3b3b; }
+        .math { background: #f4f1ea; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+        hr { border: none; height: 2px; background: linear-gradient(to right, #d4af37, transparent); margin: 35px 0; }
+        .nav-syllabus { background: #f3efe6; padding: 12px 20px; border-radius: 8px; border: 1px solid #d4af37; margin: 20px 0; }
+        .module-title { color: #1a3b3b; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-top: 30px; }
+        .key-point { background: #fcf8f0; border: 1px solid #d4af37; padding: 10px 15px; border-radius: 4px; margin: 10px 0; }
+        .example-box { background: #f0f5f5; border-left: 4px solid #1a3b3b; padding: 10px 15px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+        .lecture-note { background: #faf8f4; padding: 15px 20px; border-radius: 6px; margin: 15px 0; border: 1px solid #e0d8cc; }
+        .analogy { background: #f3efe6; padding: 12px 18px; border-radius: 6px; margin: 10px 0; font-style: italic; border-left: 4px solid #d4af37; }
+        .nav-links { display: flex; justify-content: space-between; margin: 20px 0; padding: 15px; background: #f3efe6; border-radius: 8px; flex-wrap: wrap; gap: 10px; }
+        .nav-links a { background: #1a3b3b; color: #fcf8f0; padding: 10px 20px; border-radius: 6px; text-decoration: none; }
+        .nav-links a:hover { background: #2a5b5b; }
+        @media (max-width: 600px) { .nav-links { flex-direction: column; align-items: center; } }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95em; }
+        th, td { border: 1px solid #b0c4c4; padding: 8px 12px; text-align: left; }
+        th { background: #e8f0f0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="../index.html">Sunday Ojodomo</a></h1>
+            <nav>
+                <a href="../blog.html">Blog</a>
+                <a href="../studies.html">Studies</a>
+                <a href="../qa.html">Q&A</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1 style="font-size: 2.2em; border-bottom: 4px solid #d4af37; padding-bottom: 10px;">BIO102: General Biology II</h1>
+                <p style="text-align: center; color: #4a5c5c; font-style: italic; margin-top: -5px;">Part 6: Modules 8–12 (Systems &amp; Processes)</p>
+                <p style="text-align: center; color: #4a5c5c;">Compiled by Sunday Ojodomo Michael | Federal University Lokoja</p>
+
+                <div class="nav-links">
+                    <a href="bio102-part5.html">← Part 5: Vertebrate Morphology</a>
+                    <span>📘 Part 6: Systems &amp; Processes</span>
+                </div>
+
+                <hr>
+
+                <div class="nav-syllabus">
+                    <h3>📚 Part 6 Syllabus</h3>
+                    <ul>
+                        <li><strong>Module 8:</strong> Nutrition — Autotrophic (Photosynthesis, Chemosynthesis) &amp; Heterotrophic (Holozoic, Saprophytic, Parasitic, Symbiotic, Commensalistic)</li>
+                        <li><strong>Module 9:</strong> Excretion — Importance, structures across groups, nitrogenous waste, vertebrate kidney, plants</li>
+                        <li><strong>Module 10:</strong> Circulatory Systems — Open vs closed, vertebrates, fish/amphibian/mammal patterns</li>
+                        <li><strong>Module 11:</strong> Reproduction — Asexual (binary fission, budding, fragmentation, sporulation) &amp; Sexual (gametes, fertilization, hermaphroditism)</li>
+                        <li><strong>Module 12:</strong> Respiration — External (gaseous exchange) &amp; Internal (cellular), structures across organisms, Fick's Law, breathing mechanism</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 8: NUTRITION -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 8: Nutrition</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Acquiring Energy and Materials</h3>
+                    <p>Nutrition is the process of acquiring energy and materials for cell metabolism, maintenance, repair, and growth. There are two broad types: <strong>autotrophic</strong> (making your own food) and <strong>heterotrophic</strong> (getting food from other organisms).</p>
+
+                    <div class="analogy">
+                        <strong>Analogy:</strong> Autotrophs are like farmers — they grow their own food. Heterotrophs are like consumers — they buy food from the grocery store (or catch it themselves).
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>8.1 Autotrophic Nutrition</h3>
+                    <p>An organism makes its own food from simple inorganic raw materials. Two types:</p>
+                    <ul>
+                        <li><strong>Photosynthesis</strong> — synthesis of organic compounds (sugar) from CO2 and H2O using light energy, with chlorophyll absorbing the light. Overall equation: <br>
+                        <span class="math">6CO₂ + 6H₂O → (sunlight, chlorophyll) → C₆H₁₂O₆ + 6O₂</span><br>
+                        Carried out by green plants and some bacteria; photosynthetic bacteria (e.g., purple bacteria) may use H₂S instead of H₂O, producing sulfur instead of oxygen.</li>
+                        <li><strong>Chemosynthesis</strong> — synthesis of organic compounds using chemical energy instead of light, mainly carried out by certain bacteria (e.g., sulfur bacteria, nitrifying bacteria such as Nitrosomonas). Often involves oxidation of inorganic substances like hydrogen sulfide, ammonia, or iron. Example: <br>
+                        <span class="math">2H₂S + O₂ → 2S + 2H₂O + energy</span><br>
+                        That energy is then used to convert CO₂ to carbohydrate.</li>
+                    </ul>
+
+                    <p><strong>Photosynthesis — site and requirements:</strong> The chloroplast is the main photosynthetic organelle, concentrated in the palisade mesophyll of leaves. Requirements: chlorophyll, carbon dioxide, water, and light/solar energy.</p>
+                    <p>Two stages: the <strong>light phase</strong> (light-dependent) — chlorophyll absorbs light, water is split into hydrogen and oxygen (photolysis), and light energy is converted to chemical energy — and the <strong>dark phase</strong> (light-independent) — carbon dioxide is reduced to carbohydrate.</p>
+
+                    <p><strong>Factors affecting photosynthesis:</strong> External: light intensity (action spectrum is strongest in blue and red wavelengths, weakest in green, which is reflected), light duration (roughly 12 hours needed), carbon dioxide concentration, temperature (optimum around 30°C — enzymes denature above this), and water supply. Internal: chlorophyll content, accumulation of photosynthetic products, and protoplasmic factors.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>8.2 Heterotrophic Nutrition</h3>
+                    <p>The organism depends on other organisms for food. Several types:</p>
+
+                    <ul>
+                        <li><strong>Holozoic nutrition</strong> — feeding on solid organic material from living or dead organisms. Involves five stages: <strong>ingestion</strong> (intake), <strong>digestion</strong> (breakdown), <strong>absorption</strong> (uptake), <strong>assimilation</strong> (use), and <strong>egestion</strong> (elimination of waste).</li>
+                        <li><strong>Saprophytic nutrition</strong> — feeding on dead or decaying organic matter. Saprotrophs/saprophytes (e.g., bread mold, mushrooms) play a major role in decomposition and recycling nutrients.</li>
+                        <li><strong>Parasitic nutrition</strong> — beneficial to one (parasite), harmful to the other (host). Ectoparasite (lives on outer surface, e.g., ticks), endoparasite (lives inside, e.g., Plasmodium), obligate parasite (always on host), facultative parasite (can survive off host).</li>
+                        <li><strong>Symbiotic (mutualistic) nutrition</strong> — both benefit, cannot survive without each other (e.g., lichen: fungus + alga).</li>
+                        <li><strong>Commensalistic nutrition</strong> — benefits one without harming the other (e.g., Hydractinia attached to whelk shells, feeding on crab scraps).</li>
+                    </ul>
+
+                    <p><strong>Methods of obtaining food:</strong> Digestive vacuoles (Amoeba), cilia (ciliates), mucus traps (gastropods), tentacles (Hydra), carnivorous plant traps, filtering setae (Daphnia, baleen whales), external digestion (spiders), and many others.</p>
+                </div>
+
+                <h3>📝 Module 8 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Distinguish photosynthesis from chemosynthesis in terms of energy source.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Why does the rate of photosynthesis slow down at temperatures above 30°C?
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> List the five stages of holozoic nutrition in order.
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Distinguish an obligate parasite from a facultative parasite, with an example of each.
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> A lichen is often used as the classic example of symbiotic nutrition. Explain why, and contrast this with commensalistic nutrition using an example.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> <strong>Photosynthesis</strong> uses light energy (absorbed by chlorophyll) to synthesize organic compounds from CO₂ and water. <strong>Chemosynthesis</strong> uses chemical energy instead — typically from the oxidation of inorganic substances like hydrogen sulfide, ammonia, or iron — and is carried out mainly by certain bacteria rather than green plants.</p>
+                    <p><strong>A2:</strong> Because the enzymes controlling the photosynthetic reactions begin to <strong>denature</strong> at temperatures higher than the optimum of around 30°C, reducing their catalytic efficiency and therefore the overall rate of the process.</p>
+                    <p><strong>A3:</strong> <strong>Ingestion</strong> (intake of food), <strong>digestion</strong> (breakdown of large molecules into smaller soluble ones), <strong>absorption</strong> (uptake of soluble molecules into the body), <strong>assimilation</strong> (use of absorbed molecules for energy, growth, and repair), and <strong>egestion</strong> (elimination of undigested waste).</p>
+                    <p><strong>A4:</strong> An <strong>obligate parasite</strong> lives on or inside the host at all times and cannot survive independently (e.g., <em>Plasmodium</em>, the malaria parasite). A <strong>facultative parasite</strong> can survive for some periods off the host (e.g., ticks, leeches).</p>
+                    <p><strong>A5:</strong> A lichen is a symbiotic (mutualistic) association between a fungus and an alga, in which both organisms benefit and neither can survive alone — this is true symbiosis. <strong>Commensalistic nutrition</strong> differs because only one organism benefits while the other is unaffected (not harmed, but not helped either) — e.g., the hydrozoan <em>Hydractinia</em> attaches to whelk shells inhabited by hermit crabs and feeds on scraps left by the crab, while the crab experiences no benefit or harm.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 9: EXCRETION -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 9: Excretion</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Removing Waste</h3>
+                    <p>Excretion is the removal of waste products of metabolism from the body, which if allowed to accumulate would cause harm or toxicity and prevent the body from maintaining a steady state (homeostasis).</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.1 Importance of Excretion</h3>
+                    <ul>
+                        <li>Removes unwanted by-products of metabolism, preventing disruption of chemical reaction equilibrium</li>
+                        <li>Prevents inhibition of enzymes involved in metabolism</li>
+                        <li>Regulates the pH of tissue fluids</li>
+                        <li>Maintains a steady state/balance in the body</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.2 Excretory Structures Across Animal Groups</h3>
+                    <table>
+                        <tr><th>Group</th><th>Excretory structure</th></tr>
+                        <tr><td>Unicellular organisms</td><td>Cell surface membrane and contractile vacuoles</td></tr>
+                        <tr><td>Annelids/Molluscs</td><td>Ciliated funnel-shaped nephridia (one pair per segment in annelids)</td></tr>
+                        <tr><td>Planarians/flatworms</td><td>Flame cells (bulb-shaped cells with beating flagella)</td></tr>
+                        <tr><td>Insects/Arthropods</td><td>Malpighian tubules; also tracheae</td></tr>
+                        <tr><td>Fish/Amphibians</td><td>Kidney, liver, gills, and skin</td></tr>
+                        <tr><td>Other vertebrates</td><td>Kidney, liver, lungs, and skin</td></tr>
+                    </table>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.3 Nitrogenous Waste and Excretion Across Groups</h3>
+                    <ul>
+                        <li><strong>Amoeba</strong> — CO₂, water, and ammonia removed by simple diffusion over the whole cell surface; excess water removed via contractile vacuoles by osmosis.</li>
+                        <li><strong>Planarians/flatworms</strong> — CO₂, H₂O, and ammonia (urea) excreted via flame cells; beating flagella move waste through tubules and out through pores.</li>
+                        <li><strong>Annelids (e.g., earthworms) and molluscs (e.g., snails)</strong> — produce urea, excreted through nephridia working with the circulatory system.</li>
+                        <li><strong>Insects/Arthropods</strong> — produce uric acid, excreted as solid crystals through Malpighian tubules due to reabsorption of water.</li>
+                        <li><strong>Freshwater fish</strong> — gills are in direct contact with water and are permeable to nitrogenous waste and ions; produce large volumes of very dilute urine.</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.4 The Vertebrate Kidney</h3>
+                    <p>The vertebrate excretory system works with the circulatory system to remove wastes and water from blood, converting them to urine, stored in the urinary bladder before removal. Kidneys contain working units called <strong>nephrons</strong>, which filter blood, remove impurities, and return necessary substances to the bloodstream.</p>
+
+                    <p><strong>Formation of urea in humans:</strong> Urea is a nitrogenous waste of humans and other terrestrial mammals. Key properties: non-toxic, very soluble, and a small molecule. Urea is formed from the deamination of amino acids in the liver, in two stages: <strong>Deamination</strong> — the amino group is removed from an amino acid to make ammonia. <strong>Detoxification</strong> — ammonia (toxic) is converted to a harmless product (urea) for transportation to the kidneys.</p>
+
+                    <p><strong>Four main kidney functions:</strong></p>
+                    <ul>
+                        <li>Removal of metabolic waste products</li>
+                        <li>Regulation of water content in body fluids</li>
+                        <li>Regulation of the pH of body fluids</li>
+                        <li>Regulation of the chemical composition of body fluids by removing substances in excess of immediate requirements</li>
+                    </ul>
+                    <p>Osmoregulatory roles are carried out through three processes: <strong>ultrafiltration</strong>, <strong>selective reabsorption</strong>, and <strong>secretion</strong>.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>9.5 Excretion in Plants</h3>
+                    <p>Plants do not have specialized excretory organs; they eliminate waste substances mainly through diffusion. Excess oxygen is released through stomata and lenticels. Excess water is removed by transpiration and guttation. Waste is also eliminated by <strong>abscission</strong> — the accumulation of waste in the vacuoles of aging leaf cells, which eventually die and fall off, removing the waste in the process.</p>
+                </div>
+
+                <h3>📝 Module 9 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Why is excretion essential for maintaining homeostasis?
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Compare the excretory structures of a flatworm, an earthworm, and an insect.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Why do freshwater fish need to produce large volumes of very dilute urine, while a fish living in the open ocean would not have the same need?
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Describe the two stages by which urea is formed from amino acids in the human body, and state where this occurs.
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> List the three processes by which the kidney carries out its osmoregulatory role.
+                </div>
+                <div class="test-question">
+                    <strong>Q6:</strong> Plants have no excretory organs, yet they still excrete. Explain how, using two examples.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> Because unremoved metabolic waste products would accumulate and disrupt the equilibrium of chemical reactions in the body, inhibit enzymes involved in metabolism, and disturb the pH balance of tissue fluids — all of which would prevent the body from maintaining a steady internal state.</p>
+                    <p><strong>A2:</strong> Flatworm (planarian): <strong>flame cells</strong>, bulb-shaped cells with beating flagella that create currents to move waste through tubules and out through pores. Earthworm: ciliated funnel-shaped <strong>nephridia</strong>, one pair per segment, working with the closed circulatory system. Insect: <strong>Malpighian tubules</strong>, which excrete uric acid as solid crystals due to reabsorption of water.</p>
+                    <p><strong>A3:</strong> Freshwater fish gills are highly permeable and in direct contact with water; because the surrounding water is less concentrated than their body fluids, water constantly moves into the fish by osmosis. To maintain their body fluids in a steady state, they must lose this large volume of water continuously by producing large volumes of dilute urine. A marine fish faces the opposite problem (tending to lose water to the more concentrated seawater) and would not need to offload excess water in the same way.</p>
+                    <p><strong>A4:</strong> It occurs in the <strong>liver</strong>, in two stages: (1) <strong>Deamination</strong> — the amino group is removed from an amino acid, producing ammonia and leaving an acid residue that can enter the Krebs cycle for energy. (2) <strong>Detoxification</strong> — the toxic ammonia is combined with carbon dioxide and converted into a harmless product, urea, which is non-toxic, soluble, and small enough to be transported safely in the blood to the kidneys for excretion.</p>
+                    <p><strong>A5:</strong> <strong>Ultrafiltration</strong>, <strong>selective reabsorption</strong>, and <strong>secretion</strong>.</p>
+                    <p><strong>A6:</strong> Plants eliminate waste mainly by diffusion rather than through specialized organs. For example, excess oxygen produced during photosynthesis diffuses out through stomata and lenticels; at night, carbon dioxide accumulates and is released as a waste product the same way. Plants also eliminate waste through <strong>abscission</strong> — waste accumulates in the vacuoles of aging leaf cells, which then die and fall off, removing the waste along with the leaf.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 10: CIRCULATORY SYSTEMS -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 10: Circulatory Systems</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Mass Transport</h3>
+                    <p>Simple animals like cnidarians and flatworms lack specialized circulatory systems because their large surface-area-to-volume ratio allows diffusion of gases over the whole body surface. As organisms increase in size and complexity, diffusion becomes inadequate — requiring a <strong>mass flow system</strong>.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>10.1 The Blood Vascular System</h3>
+                    <p>Three distinct characteristics: (1) a circulatory fluid — the blood, (2) a contractile, pumping device (a modified blood vessel or a heart), (3) tubes through which the fluid can circulate — the blood vessels.</p>
+
+                    <p><strong>Open vs Closed Blood Systems:</strong></p>
+                    <table>
+                        <tr><th>Feature</th><th>Open blood system</th><th>Closed blood system</th></tr>
+                        <tr><td>Path</td><td>Blood pumped into aorta → arteries → open spaces (sinuses/haemocoel)</td><td>Blood stays within vessels at all times</td></tr>
+                        <tr><td>Control</td><td>Distribution to tissues poorly controlled</td><td>Well controlled, high pressure</td></tr>
+                        <tr><td>Contact with tissue</td><td>Blood passes directly to tissue</td><td>Blood does not directly contact tissues/cells</td></tr>
+                        <tr><td>Found in</td><td>Arthropods, molluscs</td><td>Annelids (e.g., earthworm) and chordates</td></tr>
+                    </table>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>10.2 Patterns of Vertebrate Circulation</h3>
+                    <ul>
+                        <li><strong>Single circulation (fish)</strong> — blood flows only once through the heart per full circuit; heart has one atrium and one ventricle. Deoxygenated blood is pumped to the gills for oxygenation, then flows on to the rest of the body.</li>
+                        <li><strong>Incomplete double circulation (amphibians)</strong> — heart has three chambers: two atria and one ventricle. Blood passes through the heart twice per full circuit. Because both atria empty into the single ventricle, oxygenated and deoxygenated blood partially mix.</li>
+                        <li><strong>Double circulation (mammals, birds)</strong> — blood flows through the heart twice for each complete circuit. Heart is divided into four chambers — two atria, two ventricles. Right side handles deoxygenated blood only; left side handles oxygenated blood only, keeping the two separate.</li>
+                    </ul>
+                </div>
+
+                <h3>📝 Module 10 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Why don't cnidarians and flatworms need a specialized circulatory system, while larger, more complex animals do?
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> What are the three defining characteristics of a blood vascular system?
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Explain the key structural difference between an open and a closed blood system, and name one animal group that uses each.
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Why is arthropod blood colorless despite arthropods having a circulatory system?
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> Explain why a fish has only one atrium and one ventricle, while a mammal has two of each.
+                </div>
+                <div class="test-question">
+                    <strong>Q6:</strong> Why is an amphibian's double circulation described as 'incomplete,' and what physiological consequence does this have?
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> Simple animals like cnidarians and flatworms have a large <strong>surface-area-to-volume ratio</strong>, so diffusion across the whole body surface is sufficient to meet their needs — the distance materials must travel inside the body is small. As animals increase in size and complexity, the distance and quantity of materials that must be transported internally increases beyond what diffusion alone can handle efficiently, making a mass-flow circulatory system necessary.</p>
+                    <p><strong>A2:</strong> (1) A circulatory fluid (the blood); (2) a contractile, pumping device — either a modified blood vessel or a heart; (3) tubes (blood vessels) through which the fluid can circulate.</p>
+                    <p><strong>A3:</strong> In an open system, blood is pumped from the heart into an aorta, then arteries, then directly into open blood spaces called sinuses/haemocoel, bathing the internal organs directly before slowly returning to the heart — found in arthropods and molluscs. In a closed system, blood stays within vessels at all times, never directly contacting tissues; the heart pumps it rapidly under high pressure through arteries, and it returns via veins — found in annelids and vertebrates.</p>
+                    <p><strong>A4:</strong> Because most arthropods rely mainly on the <strong>tracheal system</strong>, not the blood, for gas transport. Their open circulatory system's blood therefore lacks haemoglobin since it isn't needed for oxygen transport.</p>
+                    <p><strong>A5:</strong> A fish uses <strong>single circulation</strong>: blood is pumped from the heart once per circuit, goes to the gills, and then continues on to the rest of the body without returning to the heart first — so only one atrium and one ventricle are needed. A mammal uses <strong>double circulation</strong>: blood passes through the heart twice per full circuit (once to the lungs, once to the body), and the heart is divided into four chambers so that oxygenated and deoxygenated blood are kept completely separate.</p>
+                    <p><strong>A6:</strong> It's incomplete because the heart has only <strong>three chambers</strong> — two atria but a single shared ventricle — so oxygenated blood from the lungs and deoxygenated blood returning from the body mix partially within that one ventricle before being pumped back out. The consequence is that the blood delivered to the tissues is not as fully oxygenated as it would be with a four-chambered heart that keeps the two blood supplies completely separate.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 11: REPRODUCTION -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 11: Reproduction</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Ensuring Survival</h3>
+                    <p>Reproduction is the formation of new living units by similar units already in existence. It transmits genetic material from one generation to the next, ensuring the species survives over time even though individual members die.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>11.1 Asexual Reproduction</h3>
+                    <p>Involves a single organism, without production of gametes. Usually results in genetically identical offspring (though genetic variation may still arise from random mutations).</p>
+
+                    <table>
+                        <tr><th>Type</th><th>Description</th><th>Example(s)</th></tr>
+                        <tr><td>Binary fission</td><td>An individual divides into two approximately equal parts</td><td>Amoeba, Paramecium</td></tr>
+                        <tr><td>Multiple fission</td><td>The nucleus divides repeatedly into many nuclei, each surrounded by a cell membrane</td><td>Plasmodium (schizogony)</td></tr>
+                        <tr><td>Budding</td><td>Production of an outgrowth (bud) from a parent, which develops into a new organism</td><td>Hydra, yeast</td></tr>
+                        <tr><td>Fragmentation</td><td>The organism's body breaks into two or more parts, each growing into a new individual</td><td>Planaria, Spirogyra</td></tr>
+                        <tr><td>Sporulation</td><td>Many nuclear divisions produce many cells within a cyst, which is surrounded by a cell membrane</td><td>Bread mold, ferns</td></tr>
+                        <tr><td>Cloning</td><td>Production of many genetically identical copies of an individual</td><td>Plants (cuttings), Dolly the sheep</td></tr>
+                    </table>
+
+                    <p><strong>Advantages:</strong> Only one parent required; rapid multiplication; production of genetically identical offspring.<br>
+                    <strong>Disadvantages:</strong> No genetic variation; overcrowding; disease may affect all individuals in a population.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>11.2 Sexual Reproduction</h3>
+                    <p>Involves the fusion of two gametes to form a diploid zygote. The fusion of gametes is called <strong>fertilization</strong>. It leads to genetic variation, which provides the raw material for natural selection.</p>
+
+                    <p><strong>Hermaphroditism:</strong> Species where both male and female gametes are produced within the same individual — e.g., <em>Obelia</em> (cnidarian), <em>Planaria</em> (flatworm), <em>Lumbricus</em> (earthworm), <em>Helix</em> (garden snail).</p>
+
+                    <p><strong>Meiosis</strong> is essential because sexual reproduction requires a mechanism for reducing the genetic material by half before gametes fuse; this ensures the diploid condition is restored when gametes fuse.</p>
+                </div>
+
+                <h3>📝 Module 11 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Why is asexual reproduction generally considered more 'primitive' than sexual reproduction?
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Distinguish binary fission from multiple fission, and name the specific terms used for the cell and process in multiple fission.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> What structural feature must an organism possess for fragmentation to succeed as a reproductive strategy, and why?
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> List two advantages and two disadvantages of asexual reproduction compared to sexual reproduction.
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> Explain why meiosis is described as 'essential' to sexual reproduction.
+                </div>
+                <div class="test-question">
+                    <strong>Q6:</strong> Give three examples of hermaphroditic animals and explain what the term means.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> Because it does not require the production of haploid gametes or the process of meiosis — it is the simplest method of creating new individuals from pre-existing ones, relying only on mitotic division. Sexual reproduction, in contrast, requires the more complex machinery of gamete formation and fertilization.</p>
+                    <p><strong>A2:</strong> <strong>Binary fission</strong> is division of one individual into two approximately equal parts, each becoming like the parent (e.g., <em>Amoeba</em>). <strong>Multiple fission</strong> is repeated division of the nucleus into many nuclei, each becoming surrounded by cytoplasm to form a new individual — the cell undergoing this is called a <strong>schizont</strong>, and the process is called <strong>schizogony</strong> (e.g., <em>Plasmodium</em>).</p>
+                    <p><strong>A3:</strong> Strong powers of <strong>regeneration</strong> — because in fragmentation, the organism's body breaks into two or more parts, and each part must be capable of growing into a complete new individual. Without strong regenerative ability, a fragment would simply die rather than develop into a new organism (e.g., <em>Hydra</em> can regenerate from as little as 1/50th of its body).</p>
+                    <p><strong>A4:</strong> <strong>Advantages:</strong> only one parent is required; it allows rapid multiplication/increase in numbers. <strong>Disadvantages:</strong> no genetic variation occurs among offspring; if dispersal is restricted, rapid population increase can lead to overcrowding and exhaustion of nutrients.</p>
+                    <p><strong>A5:</strong> Because sexual reproduction involves the fusion of two gametes to form a diploid zygote. If gametes were diploid (like ordinary body cells), fusion would double the chromosome number every generation. Meiosis provides the mechanism for reducing the genetic material by half before gametes are formed, so that when two haploid gametes fuse at fertilization, the normal diploid condition is restored rather than exceeded.</p>
+                    <p><strong>A6:</strong> <strong>Hermaphrodite</strong> (bisexual) means both male and female gametes are produced within the same individual. Examples: <em>Obelia</em> (a cnidarian), <em>Planaria</em> (a flatworm), and <em>Lumbricus</em> (the earthworm, an oligochaete). <em>Taenia</em> (tapeworm) and <em>Helix</em> (the garden snail) are also correct.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 12: RESPIRATION -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 12: Respiration</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: Releasing Energy</h3>
+                    <p>Respiration is the process by which chemical energy in organic molecules is released by oxidation, making that energy available to living cells in the form of <strong>ATP</strong> (Adenosine Triphosphate). The overall biochemical process occurring within cells is called <strong>cell respiration</strong>: if it requires oxygen it is <strong>aerobic respiration</strong>; in the absence of oxygen, it is <strong>anaerobic respiration</strong>.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>12.1 Two Types of Respiration</h3>
+                    <ul>
+                        <li><strong>External respiration/gaseous exchange</strong> — the process of acquiring oxygen from, and getting rid of carbon dioxide into, the environment.</li>
+                        <li><strong>Internal/cellular respiration</strong> — the biochemical breakdown of organic molecules within cells to release energy.</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>12.2 External Respiration / Gaseous Exchange</h3>
+                    <p>Gaseous exchange refers to the exchange of respiratory gases between the cells of the organism and the environment. The area where gaseous exchange takes place is called the <strong>respiratory surface</strong>. Gaseous exchange takes place in all organisms by the physical process of <strong>diffusion</strong>.</p>
+
+                    <p><strong>Requirements of an effective respiratory surface (Fick's Law):</strong></p>
+                    <ul>
+                        <li>Permeable, so gases can pass through</li>
+                        <li>Thin, because diffusion is only efficient over short distances</li>
+                        <li>Possesses a large surface-area-to-volume ratio</li>
+                        <li>Possesses a good blood supply and/or ventilation mechanism</li>
+                    </ul>
+                    <p><strong>Fick's Law:</strong> the rate of diffusion of respiratory gas through a respiratory surface is proportional to surface area × the difference in concentration / thickness of the respiratory surface.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>12.3 Respiratory Structures Across Organisms</h3>
+                    <ul>
+                        <li><strong>Protozoans (e.g., Amoeba)</strong> — cell surface membrane; diffusion occurs over the whole surface.</li>
+                        <li><strong>Segmented worms (e.g., earthworm)</strong> — no special respiratory organs; cylindrical body shape gives a high surface-area-to-volume ratio; moist skin with capillaries for diffusion.</li>
+                        <li><strong>Insects (e.g., locust)</strong> — <strong>tracheal system</strong>: spiracles → tracheae → tracheoles → tissues. Allows oxygen to diffuse directly to tissues without blood transport.</li>
+              <li><strong>Bony fish</strong> — <strong>gills</strong> with filaments and lamellae; <strong>counter-current system</strong> maintains concentration gradient; can extract up to 80% of oxygen in water.</li>
+                        <li><strong>Amphibians (e.g., frog)</strong> — skin (cutaneous), mouth (buccal), and lungs (pulmonary); tadpoles use gills.</li>
+                        <li><strong>Mammals (e.g., humans)</strong> — <strong>lungs</strong> with ~700 million alveoli; total surface area of 70–90 m²; alveolus wall only 0.001mm thick.</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>12.4 Mechanism of Breathing (Ventilation)</h3>
+                    <p><strong>Inspiration (breathing in):</strong> An active process. External intercostal muscles contract, rib cage moves up and out; diaphragm contracts, flattens. Thoracic volume increases, pressure drops below atmospheric, air enters.</p>
+                    <p><strong>Expiration (breathing out):</strong> Largely a passive process. External intercostal muscles relax, rib cage drops; diaphragm relaxes and domes upward. Thoracic volume decreases, pressure rises above atmospheric, air forced out.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>12.5 Cell/Internal Respiration</h3>
+                    <p>Cell respiration involves the oxidation of an organic compound, the respiratory substrate. Carbohydrates, fats, and proteins may all be used. Carbohydrates are used first, then fats, then proteins as a last resort.</p>
+                    <p>Two fundamental reaction types: <strong>oxidation</strong> and <strong>decarboxylation</strong>. During cell respiration, glucose is oxidized by a series of dehydrogenations. The usual hydrogen carrier is <strong>NAD</strong> (Nicotinamide Adenine Dinucleotide): <span class="math">NAD⁺ + 2H → NADH + H⁺</span></p>
+                </div>
+
+                <h3>📝 Module 12 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Distinguish external respiration from internal (cell) respiration.
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> State Fick's Law of diffusion as it relates to respiratory surfaces, and list the four physical requirements of an effective respiratory surface.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Why doesn't an earthworm need specialized respiratory organs, and what vulnerability does this create for it?
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> Trace the pathway of air through an insect's tracheal system, from the outside environment to the tissues.
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> Explain the counter-current system in fish gills, and why it allows such efficient oxygen extraction.
+                </div>
+                <div class="test-question">
+                    <strong>Q6:</strong> Why does a frog rely on three different respiratory surfaces at different points in its life, while a tadpole uses gills?
+                </div>
+                <div class="test-question">
+                    <strong>Q7:</strong> List five reasons why gas exchange across the alveoli in mammalian lungs is so efficient.
+                </div>
+                <div class="test-question">
+                    <strong>Q8:</strong> Explain the difference between inspiration and expiration in terms of whether each is an active or passive process, and what drives each.
+                </div>
+                <div class="test-question">
+                    <strong>Q9:</strong> Describe the role of NAD in cell respiration.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> <strong>External respiration</strong> (gaseous exchange) is the physical process of acquiring oxygen from, and releasing carbon dioxide into, the environment across a respiratory surface. <strong>Internal/cell respiration</strong> is the biochemical breakdown of organic molecules within cells to release energy in the form of ATP — this is a metabolic process, distinct from the physical gas exchange.</p>
+                    <p><strong>A2:</strong> <strong>Fick's Law:</strong> the rate of diffusion of a respiratory gas through a respiratory surface is proportional to the surface area multiplied by the difference in concentration of the gas on either side of the membrane, and inversely related to the thickness of the surface. Requirements: the surface must be <strong>permeable</strong>, <strong>thin</strong>, possess a large <strong>surface-area-to-volume ratio</strong>, and (in organisms using blood) have a good <strong>blood supply</strong> and/or ventilation mechanism to maintain a steep diffusion gradient.</p>
+                    <p><strong>A3:</strong> Its cylindrical body shape gives it a high surface-area-to-volume ratio, and it has a low rate of oxygen consumption, so diffusion across the moist skin is sufficient. This creates a vulnerability: because gas exchange depends on keeping the skin moist, earthworms have little protection against desiccation and must stay in moist conditions.</p>
+                    <p><strong>A4:</strong> <strong>Spiracles → tracheae → tracheoles → tissues</strong>. This allows oxygen to diffuse directly to tissues without needing transportation by the blood, which is much faster than diffusion of dissolved oxygen through tissue and supports higher metabolic rates.</p>
+                    <p><strong>A5:</strong> Blood in the gill lamellae flows in the <strong>opposite direction</strong> to the flow of water passing over them. This means blood entering the gills always meets water that has a relatively higher oxygen concentration, maintaining a concentration gradient along the entire length of the gill filament — allowing bony fish to extract up to <strong>80%</strong> of the dissolved oxygen in the water.</p>
+                    <p><strong>A6:</strong> The tadpole develops in water and uses gills, suited to aquatic gas exchange. As an adult, the frog splits its gas exchange needs across cutaneous (skin), buccal (mouth lining), and pulmonary (lung) respiration because amphibian lungs alone are relatively underdeveloped and cannot meet all of the animal's oxygen needs.</p>
+                    <p><strong>A7:</strong> (1) Alveoli have a large surface area (~70–90 m²); (2) gases have a short distance to travel because the alveolus wall and capillary endothelium are extremely thin; (3) a steep diffusion gradient is maintained by ventilation; (4) there is a good blood supply and haemoglobin; (5) surfactant is present, secreted by special cells in the alveolus wall, which helps maintain alveolar structure.</p>
+                    <p><strong>A8:</strong> <strong>Inspiration</strong> is an <strong>active</strong> process: the external intercostal muscles contract, pulling the rib cage up and out; the diaphragm contracts and flattens. Thoracic and lung volume increase, pressure drops below atmospheric, air is drawn in. <strong>Expiration</strong> is largely a <strong>passive</strong> process, driven by elastic recoil of lung tissue and the weight of the rib cage as the external intercostal muscles relax, reducing thoracic volume and raising pressure above atmospheric so air is forced out.</p>
+                    <p><strong>A9:</strong> <strong>NAD</strong> (Nicotinamide Adenine Dinucleotide) is the usual hydrogen carrier/coenzyme used during the dehydrogenation reactions of cell respiration, which mostly occur in the mitochondrion. As glucose is oxidized through a series of dehydrogenations, hydrogen removed at each step is used to reduce NAD: <span class="math">NAD⁺ + 2H → NADH + H⁺</span>. The resulting NADH is later oxidized using oxygen to form water, releasing the energy needed to synthesize ATP.</p>
+                </div>
+
+                <hr>
+
+                <div class="nav-links">
+                    <a href="bio102-part5.html">← Part 5: Vertebrate Morphology</a>
+                    <span>🎓 End of BIO102</span>
+                </div>
+
+                <h2 style="text-align:center; border-bottom: none; margin-top: 40px;">🎓 End of BIO102 Full Lecture Series</h2>
+                <p style="text-align:center; color:#4a5c5c;">Prepared with depth, context, and clarity. Good luck with your studies, Sunday!</p>
+
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2026 Sunday Ojodomo Michael</p>
+        </footer>
+    </div>
+</body>
+</html>
