@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO102 Part 1: Viruses &amp; Bacteria · Sunday Ojodomo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .module-box { background: #f3efe6; border-left: 8px solid #d4af37; padding: 15px 20px; margin: 25px 0; border-radius: 4px; }
+        .test-question { background: #e8f0f0; padding: 12px 18px; border-radius: 6px; margin: 15px 0; border: 1px solid #b0c4c4; }
+        .answer-box { background: #ffffff; padding: 15px 20px; border-radius: 6px; margin: 10px 0 25px 0; border: 2px dashed #1a3b3b; }
+        .math { background: #f4f1ea; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+        hr { border: none; height: 2px; background: linear-gradient(to right, #d4af37, transparent); margin: 35px 0; }
+        .nav-syllabus { background: #f3efe6; padding: 12px 20px; border-radius: 8px; border: 1px solid #d4af37; margin: 20px 0; }
+        .module-title { color: #1a3b3b; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-top: 30px; }
+        .key-point { background: #fcf8f0; border: 1px solid #d4af37; padding: 10px 15px; border-radius: 4px; margin: 10px 0; }
+        .example-box { background: #f0f5f5; border-left: 4px solid #1a3b3b; padding: 10px 15px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+        .lecture-note { background: #faf8f4; padding: 15px 20px; border-radius: 6px; margin: 15px 0; border: 1px solid #e0d8cc; }
+        .analogy { background: #f3efe6; padding: 12px 18px; border-radius: 6px; margin: 10px 0; font-style: italic; border-left: 4px solid #d4af37; }
+        .nav-links { display: flex; justify-content: space-between; margin: 20px 0; padding: 15px; background: #f3efe6; border-radius: 8px; flex-wrap: wrap; gap: 10px; }
+        .nav-links a { background: #1a3b3b; color: #fcf8f0; padding: 10px 20px; border-radius: 6px; text-decoration: none; }
+        .nav-links a:hover { background: #2a5b5b; }
+        @media (max-width: 600px) { .nav-links { flex-direction: column; align-items: center; } }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95em; }
+        th, td { border: 1px solid #b0c4c4; padding: 8px 12px; text-align: left; }
+        th { background: #e8f0f0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="../index.html">Sunday Ojodomo</a></h1>
+            <nav>
+                <a href="../blog.html">Blog</a>
+                <a href="../studies.html">Studies</a>
+                <a href="../qa.html">Q&A</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1 style="font-size: 2.2em; border-bottom: 4px solid #d4af37; padding-bottom: 10px;">BIO102: General Biology II</h1>
+                <p style="text-align: center; color: #4a5c5c; font-style: italic; margin-top: -5px;">Part 1: Modules 1–2 (Viruses &amp; Bacteria)</p>
+                <p style="text-align: center; color: #4a5c5c;">Compiled by Sunday Ojodomo Michael | Federal University Lokoja</p>
+
+                <div class="nav-links">
+                    <span>📘 Part 1: Viruses &amp; Bacteria</span>
+                    <a href="bio102-part2.html">Part 2: Fungi &amp; Plant Adaptations →</a>
+                </div>
+
+                <hr>
+
+                <div class="nav-syllabus">
+                    <h3>📚 Part 1 Syllabus</h3>
+                    <ul>
+                        <li><strong>Module 1:</strong> Viruses — What they are, structure, classification (5 axes), identification, cultivation, why they're not in the three domains</li>
+                        <li><strong>Module 2:</strong> Bacteria — Characteristics, external/internal structure, shapes, Gram staining, classification, bacteria vs archaea</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 1: VIRUSES -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 1: Viruses</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: What Makes a Virus Unique?</h3>
+                    <p>Viruses are genetic material (DNA or RNA, never both) enclosed in a protective protein coat called the <strong>capsid</strong>. A virus is not a cell — it has no membrane-bound organelles, no cytoplasm of its own, and no independent metabolism.</p>
+
+                    <div class="analogy">
+                        <strong>Analogy:</strong> A virus is like a piece of software code. By itself, it can't do anything — it just sits there. But when it gets into a computer (a host cell), it hijacks the system to replicate itself. The virus isn't alive, but it can cause living things to make more of it.
+                    </div>
+
+                    <p><strong>Living or non-living?</strong> Viruses sit in a gray zone. They fail most tests of life (cannot use energy, respond to stimuli, grow, or reproduce independently) but they <em>can</em> evolve, since their genetic material mutates over time — a genuinely lifelike trait. This is why viruses cannot be placed into any of the three domains of life (Archaea, Bacteria, Eukarya): those domains classify <em>cells</em>, and a virus is not a cell.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>1.1 Basic Characteristics</h3>
+                    <ul>
+                        <li>A virus is nothing more than DNA or RNA surrounded by a protein coat.</li>
+                        <li>A virus cannot use energy, respond to stimuli, grow, or maintain homeostasis.</li>
+                        <li>A virus cannot reproduce on its own — it must infect a host cell and hijack its machinery.</li>
+                        <li>Because it has genetic material and can reproduce (via a host), a virus <strong>can evolve</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>1.2 Structure</h3>
+                    <p>Viruses range from about <strong>20–250 nm</strong> in size (far smaller than bacteria; an electron microscope is needed to see them). Key structural terms:</p>
+                    <ul>
+                        <li><strong>Capsid</strong> — the protective protein coat surrounding the genome.</li>
+                        <li><strong>Nucleocapsid</strong> — the capsid plus the enclosed genetic material together.</li>
+                        <li><strong>Envelope</strong> — an outer lipid membrane some viruses acquire from the host cell (e.g., HIV); not all viruses have one.</li>
+                        <li><strong>Virion</strong> — a complete, infectious virus particle: genome + capsid (+ envelope if present). This is the whole assembled unit.</li>
+                    </ul>
+                    <p>Complexity varies hugely: the simplest viruses encode around 4 proteins; the most complex encode 100–200 proteins.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>1.3 Classification of Viruses</h3>
+                    <p>Viruses are classified along <strong>five independent axes</strong>. A single virus can appear in more than one category depending on which axis you're using — this is a common source of confusion in exam questions, so treat these as separate lenses, not a single ranking.</p>
+
+                    <h4>(a) By nucleic acid type</h4>
+                    <table>
+                        <tr><th>Type</th><th>Subtypes</th><th>Examples</th></tr>
+                        <tr><td>DNA virus</td><td>Single-stranded (ss) / Double-stranded (ds)</td><td>Parvovirus (ssDNA); Adenovirus, Herpes virus (dsDNA)</td></tr>
+                        <tr><td>RNA virus</td><td>Double-stranded (ds) / Single-stranded (ss)</td><td>Reovirus (dsRNA); Poliovirus, Hepatitis A, Rabies, Influenza (ssRNA)</td></tr>
+                    </table>
+
+                    <h4>(b) By structure/symmetry</h4>
+                    <table>
+                        <tr><th>Shape</th><th>Example</th></tr>
+                        <tr><td>Complex</td><td>Poxvirus</td></tr>
+                        <tr><td>Radial symmetry</td><td>Bacteriophage</td></tr>
+                        <tr><td>Cubical/icosahedral</td><td>Reovirus, Picornavirus</td></tr>
+                        <tr><td>Rod/spiral/helical</td><td>Paramyxovirus, Orthomyxovirus</td></tr>
+                    </table>
+
+                    <h4>(c) By site of replication</h4>
+                    <ul>
+                        <li><strong>Cytoplasm only</strong> — all RNA viruses except Influenza</li>
+                        <li><strong>Nucleus + cytoplasm</strong> — Influenza virus, Poxvirus</li>
+                        <li><strong>Nucleus only</strong> — all DNA viruses except Poxvirus</li>
+                    </ul>
+
+                    <h4>(d) By host range</h4>
+                    <table>
+                        <tr><th>Host type</th><th>Examples</th></tr>
+                        <tr><td>Animal viruses</td><td>Influenza, mumps, rabies, poliovirus, Herpes virus</td></tr>
+                        <tr><td>Plant viruses</td><td>Potato virus, tobacco mosaic virus (TMV), cauliflower mosaic virus</td></tr>
+                        <tr><td>Bacteriophage</td><td>Infects bacteria; e.g., lambda (λ) phage</td></tr>
+                        <tr><td>Insect virus</td><td>Ascovirus, Entomopox virus</td></tr>
+                    </table>
+
+                    <h4>(e) By mode of transmission</h4>
+                    <table>
+                        <tr><th>Route</th><th>Examples</th></tr>
+                        <tr><td>Airborne</td><td>Swine flu, Rhinovirus</td></tr>
+                        <tr><td>Fecal-oral</td><td>Hepatitis A, Poliovirus, Rotavirus</td></tr>
+                        <tr><td>Sexual contact</td><td>Retrovirus, human papillomavirus</td></tr>
+                        <tr><td>Blood transfusion</td><td>Hepatitis B, HIV</td></tr>
+                        <tr><td>Zoonotic (animal bite)</td><td>Rabies virus, Ebola virus, Flavivirus</td></tr>
+                    </table>
+
+                    <div class="key-point">
+                        <strong>Note:</strong> Rabies virus is both an animal virus (host range) and zoonotic (transmission) — same virus, two different valid classification axes.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>1.4 Identification of Viruses</h3>
+                    <p>Once a virus infects a host, embryo, or cell culture, samples are examined under brightfield, electron, or fluorescent microscopy. For plant viruses specifically, identification methods include:</p>
+                    <ul>
+                        <li>Inoculating indicator plants and observing symptoms</li>
+                        <li>Serological tests using antisera of known viruses</li>
+                        <li>Studying transmission aspects (sap inoculation, insect vectors, persistence in vector)</li>
+                        <li>Measuring thermal inactivation point, dilution end point, survival outside the host</li>
+                        <li>Testing interaction with other viruses (cross-protection)</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>1.5 Cultivation of Viruses</h3>
+                    <p>Viruses cannot grow on standard broth/agar media — they need a living host. Methods include:</p>
+                    <ul>
+                        <li><strong>Culturing in bacteria</strong> — bacteria + phages mixed on agar; infected cells lyse and release new phages, producing clear zones called <strong>plaques</strong>; each plaque = one original phage (the basis of the plaque assay).</li>
+                        <li><strong>Cell/tissue culture</strong> — animal cells grown as a monolayer, then inoculated; plaques or cytopathic effects indicate viral growth.</li>
+                        <li><strong>Whole organs/animals</strong> — monkeys, rabbits, guinea pigs, mice used historically (e.g., yellow fever research).</li>
+                        <li><strong>Embryonated chicken eggs</strong> — inexpensive; virus injected into the chorioallantoic membrane or allantoic cavity depending on which the virus prefers.</li>
+                        <li><strong>Plant tissue/whole plants</strong> — leaves mechanically inoculated with an abrasive, or via insect vectors, or by grafting a diseased part onto a healthy plant.</li>
+                    </ul>
+                </div>
+
+                <h3>📝 Module 1 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> Why can't viruses be classified into any of the three domains of life?
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Is a virus alive? Explain.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Define capsid, nucleocapsid, and virion, and explain how they differ.
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> List the five bases used to classify viruses.
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> Explain why Rabies virus can correctly be described as both an 'animal virus' and 'zoonotic'.
+                </div>
+                <div class="test-question">
+                    <strong>Q6:</strong> What is a plaque, and how is it used to estimate phage numbers?
+                </div>
+                <div class="test-question">
+                    <strong>Q7:</strong> Name three methods used to cultivate viruses in the lab.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> Because the domains (Archaea, Bacteria, Eukarya) classify <em>cells</em>, and a virus is not a cell — it has no plasma membrane, cytoplasm, ribosomes, or independent metabolism of its own.</p>
+                    <p><strong>A2:</strong> It's genuinely ambiguous. Viruses fail most tests of life (no independent metabolism, growth, response to stimuli, or self-reproduction) but they <em>can</em> evolve, since their DNA/RNA mutates over time — a lifelike trait. Most biologists describe them as existing in a gray zone between living and non-living.</p>
+                    <p><strong>A3:</strong> The <strong>capsid</strong> is the protein coat around the genetic material. The <strong>nucleocapsid</strong> is the capsid plus the enclosed genome together. The <strong>virion</strong> is the complete infectious particle — genome + capsid (and envelope, if present) — i.e., the whole assembled virus.</p>
+                    <p><strong>A4:</strong> (1) Type of nucleic acid, (2) structure/symmetry, (3) site of replication, (4) host range, (5) mode of transmission.</p>
+                    <p><strong>A5:</strong> These come from two different, independent classification axes. 'Animal virus' classifies Rabies by host range (it infects animals). 'Zoonotic' classifies it by mode of transmission (it spreads via the bite of an infected animal). A virus can sit in one category from each axis simultaneously.</p>
+                    <p><strong>A6:</strong> A plaque is a clear zone in an otherwise uniform bacterial lawn on an agar plate, caused by bacteriophages lysing infected bacterial cells. Because each plaque originates from a single phage, counting plaques gives an estimate of the number of infectious phage particles in the original sample.</p>
+                    <p><strong>A7:</strong> (1) Embryonated chicken eggs — e.g., mumps virus grown in the allantoic cavity. (2) Cell/tissue culture — animal cells grown as a monolayer. (3) Culturing in bacteria — bacteriophages grown on bacterial lawns, producing plaques.</p>
+                </div>
+
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- MODULE 2: BACTERIA -->
+                <!-- ============================================================ -->
+                <h2 class="module-title">📘 Module 2: Bacteria</h2>
+
+                <div class="lecture-note">
+                    <h3>The Context: The Most Abundant Life Forms on Earth</h3>
+                    <p>Bacteria are simple, single-celled <strong>prokaryotic</strong> organisms — no true nucleus, no membrane-bound organelles. They are found everywhere: in soil, water, extreme environments (extremophiles), and living organisms. They are essential for nutrient cycling, decomposition, and many industrial processes, but some also cause disease.</p>
+
+                    <div class="analogy">
+                        <strong>Analogy:</strong> Bacteria are like tiny factories. Each one is a self-contained unit with its own DNA (the blueprint), ribosomes (the assembly line), and a cell wall (the building structure). They can replicate rapidly, adapt to new environments, and even share genetic material with each other like factories sharing blueprints.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>2.1 General Characteristics</h3>
+                    <ul>
+                        <li>Simple, single-celled prokaryotic organisms — no true nucleus, no membrane-bound organelles.</li>
+                        <li>Size: roughly <strong>0.5–1.0 μm</strong> in diameter.</li>
+                        <li>DNA is free-floating in a region called the <strong>nucleoid</strong>; additional small circular DNA molecules are called <strong>plasmids</strong> (often carry antibiotic resistance genes).</li>
+                        <li>Cell wall contains <strong>peptidoglycan</strong>, giving the cell its shape and rigidity.</li>
+                        <li>Reproduce asexually by <strong>binary fission</strong>, but gain genetic diversity through <strong>transformation</strong>, <strong>transduction</strong>, and <strong>conjugation</strong>.</li>
+                        <li>Ubiquitous — found in soil, water, extreme environments, and living organisms.</li>
+                    </ul>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>2.2 External and Internal Structure</h3>
+                    <table>
+                        <tr><th>Structure</th><th>Function</th></tr>
+                        <tr><td>Flagella</td><td>Movement</td></tr>
+                        <tr><td>Pili/fimbriae</td><td>Entry point for genetic material during bacterial mating (conjugation)</td></tr>
+                        <tr><td>Capsule</td><td>Attachment to surfaces; protection</td></tr>
+                        <tr><td>Sheaths</td><td>Moderate change of position</td></tr>
+                        <tr><td>Prostheca</td><td>Increase surface area for nutrient absorption</td></tr>
+                        <tr><td>Stalks</td><td>Attachment to surfaces</td></tr>
+                        <tr><td>Cell wall (peptidoglycan)</td><td>Structural rigidity, barrier against environment</td></tr>
+                    </table>
+                    <p>Internal structures: cytoplasmic membrane, cytoplasm, nuclear material (nucleoid), and in some species, spores/cysts for survival under stress.</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>2.3 Typical Shapes</h3>
+                    <table>
+                        <tr><th>Shape</th><th>Example</th></tr>
+                        <tr><td>Cocci (round/spherical)</td><td>Staphylococcus, Streptococcus pneumoniae</td></tr>
+                        <tr><td>Bacilli (rods)</td><td>Bacillus subtilis, E. coli</td></tr>
+                        <tr><td>Vibrios (comma-shaped)</td><td>Vibrio cholerae</td></tr>
+                        <tr><td>Spirilla (rigid spiral)</td><td>Spirillum volutans</td></tr>
+                        <tr><td>Spirochaetes (flexible spiral)</td><td>Treponema pallidum</td></tr>
+                    </table>
+                    <p>Cocci can also cluster: <strong>diplococci</strong> (pairs), <strong>streptococci</strong> (chains), <strong>staphylococci</strong> (clusters), <strong>tetrads</strong> (four in a square), <strong>sarcinae</strong> (cube of eight).</p>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>2.4 Gram Staining</h3>
+                    <p>The main technique for a first-pass classification of bacteria, using crystal violet dye, iodine, and a safranin counterstain.</p>
+                    <table>
+                        <tr><th>Type</th><th>Result</th><th>Why</th></tr>
+                        <tr><td>Gram-positive</td><td>Stains violet</td><td>Thick peptidoglycan wall traps the violet-iodine complex</td></tr>
+                        <tr><td>Gram-negative</td><td>Stains red</td><td>Thin wall + outer lipopolysaccharide layer loses the violet-iodine complex, retain safranin</td></tr>
+                    </table>
+                    <div class="key-point">
+                        <strong>Note:</strong> Gram staining tells you general group, not exact species — it's a screening tool, not a definitive ID method.
+                    </div>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>2.5 Classification of Bacteria</h3>
+                    <table>
+                        <tr><th>Basis</th><th>Categories with examples</th></tr>
+                        <tr><td>Shape</td><td>Bacillus (E. coli), Coccus (Streptococcus pneumoniae), Vibrio (V. cholerae), Spirillum (S. volutans)</td></tr>
+                        <tr><td>Cell wall composition</td><td>Peptidoglycan wall = Gram-positive; Lipopolysaccharide wall = Gram-negative</td></tr>
+                        <tr><td>Mode of nutrition</td><td>Autotrophic (Cyanobacteria) vs Heterotrophic (all disease-causing bacteria)</td></tr>
+                        <tr><td>Mode of respiration</td><td>Aerobic (Mycobacterium) vs Anaerobic (Actinomyces)</td></tr>
+                    </table>
+                </div>
+
+                <div class="lecture-note">
+                    <h3>2.6 Bacteria vs Archaea</h3>
+                    <p>Both are prokaryotic and share overall cell shape diversity, but differ meaningfully:</p>
+                    <table>
+                        <tr><th>Feature</th><th>Bacteria</th><th>Archaea</th></tr>
+                        <tr><td>Cell wall</td><td>Contains peptidoglycan</td><td>No peptidoglycan</td></tr>
+                        <tr><td>Membrane lipids</td><td>Fatty acid–glycerol esters</td><td>Phytanyl–glycerol ethers</td></tr>
+                        <tr><td>RNA polymerase</td><td>Single</td><td>Multiple</td></tr>
+                        <tr><td>Streptomycin</td><td>Sensitive</td><td>Resistant</td></tr>
+                    </table>
+                </div>
+
+                <h3>📝 Module 2 Self-Assessment Test</h3>
+
+                <div class="test-question">
+                    <strong>Q1:</strong> What structural feature is exclusively found in bacterial cell walls, and why does it matter?
+                </div>
+                <div class="test-question">
+                    <strong>Q2:</strong> Explain the mechanism behind why Gram-positive bacteria stain violet and Gram-negative bacteria stain red.
+                </div>
+                <div class="test-question">
+                    <strong>Q3:</strong> Distinguish between the nucleoid and a plasmid in a bacterial cell.
+                </div>
+                <div class="test-question">
+                    <strong>Q4:</strong> List the three main bacterial shapes and give one named example of each.
+                </div>
+                <div class="test-question">
+                    <strong>Q5:</strong> Name two ways bacteria can exchange genetic material besides binary fission.
+                </div>
+
+                <div class="answer-box">
+                    <h4>✅ Full Solutions</h4>
+                    <p><strong>A1:</strong> Peptidoglycan. It matters because it's the target of antibiotics like penicillin, and its presence/composition is the basis of Gram staining, a key first-pass identification method.</p>
+                    <p><strong>A2:</strong> Gram-positive bacteria have a thick peptidoglycan wall that traps the crystal violet-iodine complex, so they retain the violet stain. Gram-negative bacteria have a thin peptidoglycan layer plus an outer lipopolysaccharide membrane; this structure loses the violet-iodine complex during the decolorizing step and instead retains the safranin counterstain, appearing red.</p>
+                    <p><strong>A3:</strong> The <strong>nucleoid</strong> is the region containing the bacterium's main circular chromosome, free-floating in the cytoplasm (not membrane-bound). A <strong>plasmid</strong> is a separate, smaller circular DNA molecule, additional to the main chromosome, that often carries genes such as antibiotic resistance and can be transferred between bacteria (e.g., via conjugation).</p>
+                    <p><strong>A4:</strong> Coccus (spherical) — <em>Streptococcus pneumoniae</em>. Bacillus (rod-shaped) — <em>E. coli</em>. Spiral — <em>Spirillum volutans</em> (rigid) or <em>Vibrio cholerae</em> (comma-shaped, a variant).</p>
+                    <p><strong>A5:</strong> <strong>Transformation</strong> (absorbing free DNA released by other bacteria into the environment) and <strong>conjugation</strong> (direct DNA transfer between two bacteria via a pilus). A third method is <strong>transduction</strong>, where a bacteriophage transfers DNA from one bacterium to another.</p>
+                </div>
+
+                <hr>
+
+                <div class="nav-links">
+                    <span>📘 End of Part 1</span>
+                    <a href="bio102-part2.html">Continue to Part 2: Fungi &amp; Plant Adaptations →</a>
+                </div>
+
+                <h2 style="text-align:center; border-bottom: none; margin-top: 40px;">🎓 End of BIO102 Part 1</h2>
+                <p style="text-align:center; color:#4a5c5c;">Continue to Part 2 for Fungi and Ecological Adaptations in Plants.</p>
+
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2026 Sunday Ojodomo Michael</p>
+        </footer>
+    </div>
+</body>
+</html>
