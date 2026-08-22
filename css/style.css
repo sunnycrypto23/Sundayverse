@@ -8,4 +8,61 @@
     border: 3px solid #f0f0f0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 100;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }
+    /* --- New Design Upgrades --- */
+
+/* 1. Spacing */
+section { padding: 40px 20px; }
+main.wrap { padding-bottom: 60px; }
+
+/* 2. Consistent Accent Color (Using your Teal) */
+a { color: #2b6f77; }
+a:hover { color: #1a4a50; }
+.site-nav a.active, .site-nav a:hover { color: #2b6f77; border-bottom-color: #2b6f77; }
+
+/* 3. Turn sections into proper Cards */
+.grid-cards .card, .section-log, .quick-links {
+    background-color: var(--paper-card);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+.log-entry:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); transition: 0.3s; }
+
+/* 4. Style Buttons */
+.btn, .btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+.btn-primary { background-color: #2b6f77; color: #ffffff; }
+.btn-primary:hover { background-color: #1a4a50; }
+.btn-secondary { background-color: transparent; color: #2b6f77; border: 2px solid #2b6f77; }
+.btn-secondary:hover { background-color: #f0f0f0; }
+
+/* 5. Sticky Nav Bar */
+.site-head {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--paper);
+    border-bottom: 1px solid #ddd;
+}
+/* Note: Since .site-head is now sticky, you might need to adjust your profile pic back to top: 15px; so it doesn't look weird when scrolling! */
+
+/* 5b. Mobile Hamburger Menu */
+.menu-toggle { display: none; }
+.menu-icon { display: none; cursor: pointer; font-size: 30px; padding: 5px 10px; }
+
+@media (max-width: 768px) {
+    .menu-icon { display: block; }
+    .site-nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--paper-card); flex-direction: column; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .menu-toggle:checked ~ .site-nav { display: flex; }
+    .site-nav a { padding: 10px 0; border-bottom: 1px solid #eee; }
+}
